@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 4px 3px rgb(156, 156, 156);
+    border-radius: 0% 0% 10px 10px;
+}
+
+.header-line{
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 266px;
+    height: 50px;
+    margin-top: 9px;
+}
+
+.menu-item {
+    background-color: #2C80FF;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 14px 30px 12px 30px;
+    box-shadow: 3px 4px 3px rgb(156, 156, 156);
+}
+
+.menu-item:hover {
+    color: #000000;
+    background-color: #79B3FF;
+    transition: 0.3s;
+}
+
+.menu a {
+    margin: 0 55px 0 0;
+}
+
+.container{
+    width: 100%;
+    height: 80px;
+    background-color: #2C80FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container-line{
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cont-line{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 3px rgb(156, 156, 156);
+    padding: 14px 50px 12px 50px;
+}
+
+.cont-line:hover{
+    color: #000000;
+    background-color: #79B3FF;
+    transition: 0.3s;
+}
+
+.container-line a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #474747;
+    font-weight: 700;
+}
+
+.main-container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.create-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #2C80FF; 
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px; /* Отступ под кнопкой */
+    margin-left: 80px;
+    align-self: self-start;
+    box-shadow: 3px 4px 3px rgb(156, 156, 156);
+}
+
+.create-button:hover{
+    transition: .3s;
+    color: #000000;
+    background-color: #79B3FF;
+}
+
+
+.data-table {
+    width: 85%;
+    border-collapse: collapse;
+}
+
+.data-table th, .data-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.data-table th {
+    background-color: #f2f2f2;
+}
+
+.data-table td{
+    border-bottom: 1px solid black;
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Остается на месте */
+    z-index: 1; /* На переднем плане */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота *//* Включает прокрутку, если необходимо */
+    background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный фон */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 3% auto; /* 15% сверху и центрирование */
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px; /* Закругленные углы */
+    width: 80%; /* Ширина */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для модального окна */
+}
+
+label {
+    display: block; /* Переносим каждую метку на новую строку */
+    margin-bottom: 5px; /* Отступ снизу */
+    font-weight: bold; /* Жирный шрифт */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%; /* Полная ширина */
+    padding: 10px; /* Внутренний отступ */
+    margin-bottom: 15px; /* Отступ снизу */
+    border: 1px solid #ccc; /* Цвет рамки */
+    border-radius: 5px; /* Закругленные углы */
+    box-sizing: border-box; /* Включаем отступы в общую ширину */
+    transition: border-color 0.3s; /* Плавный переход цвета рамки */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #007BFF; /* Цвет рамки при фокусе */
+    outline: none; /* Убираем стандартное выделение */
+}
+
+button[type="submit"] {
+    background-color: #28a745; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    padding: 10px 15px; /* Внутренний отступ */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    transition: background-color 0.3s; /* Плавный переход цвета */
+}
+
+button[type="submit"]:hover {
+    background-color: #218838; /* Цвет кнопки при наведении */
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.total-price {
+    position: absolute; /* Фиксируем элемент внизу */
+    bottom: 20px; /* Привязываем к нижней части контейнера */
+    left: 50%; /* Выравниваем по левому краю */
+    right: 0; /* Выравниваем по правому краю */
+    padding: 10px; /* Отступы */
+    text-align: center; /* Центрируем текст */
+}
+
